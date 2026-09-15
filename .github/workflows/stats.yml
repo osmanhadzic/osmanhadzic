@@ -34,4 +34,13 @@ jobs:
             exit 0
           fi
           git commit -m "chore: refresh profile stats assets"
-          git push
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Push failed on attempt ${attempt}; retrying..."
+            sleep 2
+          done
+          echo "Failed to push refreshed assets after multiple attempts."
+          exit 1
