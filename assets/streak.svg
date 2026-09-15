@@ -1,0 +1,15 @@
+<svg width="500" height="180" viewBox="0 0 500 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="500" y1="0" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="1" stop-color="#1F2937"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="180" rx="16" fill="url(#bg)"/>
+  <rect x="18" y="18" width="464" height="144" rx="12" fill="#111827" fill-opacity="0.55" stroke="#374151"/>
+  <text x="34" y="62" fill="#FDE68A" font-size="24" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Current Streak</text>
+  <text x="34" y="94" fill="#F9FAFB" font-size="38" font-family="Segoe UI, Arial, sans-serif" font-weight="800">— days</text>
+  <text x="34" y="126" fill="#D1D5DB" font-size="16" font-family="Segoe UI, Arial, sans-serif">Updated via GitHub profile workflow</text>
+  <circle cx="402" cy="86" r="26" fill="#F59E0B" fill-opacity="0.18"/>
+  <path d="M390 85L400 95L414 73" stroke="#F59E0B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

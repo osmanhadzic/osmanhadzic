@@ -1,0 +1,53 @@
+<svg width="820" height="220" viewBox="0 0 820 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="820" y1="0" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="1" stop-color="#1F2937"/>
+    </linearGradient>
+  </defs>
+  <rect width="820" height="220" rx="18" fill="url(#bg)"/>
+  <rect x="18" y="18" width="784" height="184" rx="12" fill="#0F172A" fill-opacity="0.55" stroke="#374151"/>
+  <text x="34" y="60" fill="#E5E7EB" font-size="24" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Contribution Activity</text>
+  <g opacity="0.9">
+    <rect x="42" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="66" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="90" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="114" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="138" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="162" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="186" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="210" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="234" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="258" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="282" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="306" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="330" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="354" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="378" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="402" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="426" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="450" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="474" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="498" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="522" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="546" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="570" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="594" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="618" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="642" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="666" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="690" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="714" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+    <rect x="738" y="104" width="16" height="16" rx="4" fill="#1F2937"/>
+  </g>
+  <g opacity="0.9">
+    <rect x="42" y="72" width="16" height="16" rx="4" fill="#22C55E" fill-opacity="0.9"/>
+    <rect x="66" y="72" width="16" height="16" rx="4" fill="#22C55E" fill-opacity="0.6"/>
+    <rect x="90" y="72" width="16" height="16" rx="4" fill="#16A34A"/>
+    <rect x="114" y="72" width="16" height="16" rx="4" fill="#86EFAC"/>
+    <rect x="138" y="72" width="16" height="16" rx="4" fill="#166534"/>
+    <rect x="162" y="72" width="16" height="16" rx="4" fill="#14532D"/>
+    <rect x="186" y="72" width="16" height="16" rx="4" fill="#1F2937"/>
+  </g>
+  <text x="34" y="170" fill="#D1D5DB" font-size="16" font-family="Segoe UI, Arial, sans-serif">Contribution graph placeholder</text>
+</svg>

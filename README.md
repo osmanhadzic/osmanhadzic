@@ -1,24 +1,18 @@
 <div align="center">
-    <img src="./assets/img/33LA.gif" alt="33LA" />
     <h1>Osman Hadzic 👨🏼‍💻</h1>
+    <img src="./assets/img/33LA.gif" alt="33LA" />
 </div>
 
-<h2>📊 Stats</h3>
+<h2 align="center">📊 Stats</h3>
 
-<div style="display: flex; justify-content: center;">
-    <span style="margin-right: 10px;">
-        <img height="170em" src="https://github-readme-stats.vercel.app/api?username=osmanhadzic&show_icons=true&theme=dark" alt="Osman's GitHub stats" />
-    </span>
-    <span>
-        <img height="170em" src="https://github-readme-streak-stats.herokuapp.com?user=osmanhadzic&theme=dark&background=282C34&ring=CE676E&fire=8DB473&currStreakNum=CE676E&currStreakLabel=CE676E&sideLabels=CE676E" alt="Osman's GitHub streak stats" />
-    </span>
+<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 12px;">
+    <img height="170em" src="./assets/stats.svg" alt="Osman's GitHub stats" />
+    <img height="170em" src="./assets/streak.svg" alt="Osman's GitHub streak stats" />
 </div>
-<h2>📈 Activity</h3>
+<h2 align="center">📈 Activity</h3>
 
 <div style="display: flex; justify-content: center;">
-    <a href="https://github.com/ashutosh00710/github-readme-activity-graph">
-        <img src="https://github-readme-activity-graph.vercel.app/graph?username=osmanhadzic&theme=react-dark" alt="Osman's github activity graph" />
-    </a>
+    <img src="./assets/activity.svg" alt="Osman's GitHub activity graph" />
 </div>
 
 <!--
