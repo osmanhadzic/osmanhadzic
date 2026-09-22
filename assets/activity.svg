@@ -1,5 +1,11 @@
-Payment required
-
-DEPLOYMENT_DISABLED
-
-pdx1::7vhr7-1790036927694-b0eebd8145aa
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240" role="img" aria-labelledby="title desc">
+  <title id="title">GitHub activity graph unavailable</title>
+  <desc id="desc">Temporary placeholder shown when activity graph provider does not return SVG content.</desc>
+  <rect width="900" height="240" rx="8" fill="#282C34" />
+  <text x="450" y="105" fill="#CE676E" text-anchor="middle" font-family="Segoe UI, Ubuntu, sans-serif" font-size="24">
+    Activity graph temporarily unavailable
+  </text>
+  <text x="450" y="145" fill="#8DB473" text-anchor="middle" font-family="Segoe UI, Ubuntu, sans-serif" font-size="18">
+    The workflow will keep the last valid SVG until providers recover.
+  </text>
+</svg>

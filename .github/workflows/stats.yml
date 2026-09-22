@@ -20,9 +20,22 @@ jobs:
           USERNAME: osmanhadzic
         run: |
           mkdir -p assets
-          curl -L "https://github-readme-stats.vercel.app/api?username=${USERNAME}&show_icons=true&theme=dark" -o assets/stats.svg
-          curl -L "https://github-readme-streak-stats.herokuapp.com?user=${USERNAME}&theme=dark&background=282C34&ring=CE676E&fire=8DB473&currStreakNum=CE676E&currStreakLabel=CE676E&sideLabels=CE676E" -o assets/streak.svg
-          curl -L "https://github-readme-activity-graph.vercel.app/graph?username=${USERNAME}&theme=react-dark" -o assets/activity.svg
+          update_svg_asset() {
+            local url="$1"
+            local output="$2"
+            local tmp_file
+            tmp_file="$(mktemp)"
+            if curl -fsSL "$url" -o "$tmp_file" && grep -qi '<svg[^>]*' "$tmp_file"; then
+              mv "$tmp_file" "$output"
+            else
+              echo "Skipping update for ${output}; non-SVG response from ${url}."
+              rm -f "$tmp_file"
+            fi
+          }
+
+          update_svg_asset "https://github-readme-stats.vercel.app/api?username=${USERNAME}&show_icons=true&theme=dark" "assets/stats.svg"
+          update_svg_asset "https://github-readme-streak-stats.herokuapp.com?user=${USERNAME}&theme=dark&background=282C34&ring=CE676E&fire=8DB473&currStreakNum=CE676E&currStreakLabel=CE676E&sideLabels=CE676E" "assets/streak.svg"
+          update_svg_asset "https://github-readme-activity-graph.vercel.app/graph?username=${USERNAME}&theme=react-dark" "assets/activity.svg"
 
       - name: Commit refreshed assets
         run: |
@@ -34,4 +47,13 @@ jobs:
             exit 0
           fi
           git commit -m "chore: refresh profile stats assets"
-          git push
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Push failed on attempt ${attempt}; retrying..."
+            sleep 2
+          done
+          echo "Failed to push refreshed assets after multiple attempts."
+          exit 1
